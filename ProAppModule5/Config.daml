@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="ProAppModule5.dll"
+        defaultNamespace="ProAppModule5"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Users/ari12407/AppData/Local/Programs/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{4acacea7-81af-4ec6-b0bd-6489a72cffb4}" version="1.0" desktopVersion="3.6.59527" product="ArcGISPro">
+    <Name>ProAppModule5</Name>
+    <Description>Utility Network Smart Trace Analyzer</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>ari12407</Author>
+    <Company>ESRI</Company>
+    <Date>6/4/2026 1:50:30 PM</Date>
+    <Subject>Geodatabase</Subject>
+  </AddInInfo>
+
+  <modules>
+    <insertModule id="ProAppModule5_Module" className="Module1" autoLoad="false" caption="Module1">
+
+      <tabs>
+        <tab id="ProAppModule5_Tab1" caption="Smart Trace">
+          <group refID="ProAppModule5_Group1"/>
+        </tab>
+      </tabs>
+
+      <groups>
+        <group id="ProAppModule5_Group1" caption="Trace Tools" appearsOnAddInTab="true">
+          <button refID="ProAppModule5_RunTraceButton"/>
+        </group>
+      </groups>
+
+      <controls>
+        <button id="ProAppModule5_RunTraceButton"
+                caption="Run Trace"
+                className="RunTraceButton"
+                loadOnClick="true"
+                smallImage="Images\AddinDesktop16.png"
+                largeImage="Images\AddinDesktop32.png">
+          <tooltip heading="Run Trace">
+            Runs a connected trace on the Utility Network and shows results.
+            <disabledText />
+          </tooltip>
+        </button>
+      </controls>
+
+    </insertModule>
+  </modules>
+</ArcGIS>
