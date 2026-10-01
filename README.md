@@ -1,7 +1,3 @@
-Here’s a **clean, GitHub‑ready `README.md`** for your project — short, focused, and highlights **what’s unique**.
-
-***
-
 # 🚀 Smart Dynamic Trace Visualizer (Pro SDK)
 
 ## 📌 Overview
